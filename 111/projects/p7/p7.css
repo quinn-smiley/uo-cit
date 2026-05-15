@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .binary-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .decimal-display {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  
+  .binary-lights {
+    display: flex;
+  }
+  
+  .light {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 5px;
+    background-color: #cccccc;
+  }
+  
+  .light.on {
+    background-color: #ff0000;
+  }
+  
+  .hidden {
+    display: none;
+  }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="CS 111 Project 1">
+    <meta name="author" content="Quinn Smiley">
+    <title>Project 1</title>
+    <style></style>
+  </head>
+  <body>
+   <script>
+      /*
+    Product Price Less Discount 
+    */
+    //https://www.calculatorsoup.com/calculators/financial/discount-calculator.php//
+   let percentDiscount=0.20;
+   const price=90;
+   let discount=percentDiscount*price;
+   let finalPrice=price-discount;
+   console.log("Product:"+price+",Discount%:"+percentDiscount+",Discount:"+discount+",Frinal Price:"+finalPrice)
+   
+   /*
+   Celsius to Fahrenheit Conversion
+   */
+  //https://www.calculatorsoup.com/calculators/conversions/celsius-to-fahrenheit.php//
+  let celsius=100
+  let fahrenheit=212
+  console.log(celsius+" degrees Celsius is "+fahrenheit+" degrees Fahrenheit")
+   
+  /* 
+  Area of a Circle
+  */
+ //http://www.calculatorsoup.com/calculators/geometry-plane/circle.php//
+ const pi=3.14
+ let radius1=15
+ let area=pi*(radius1*radius1)
+ console.log("The area of a circle eith radius "+radius1+" is "+area)
+
+ /*
+ Volume of a Sphere
+ */
+//http://www.calculatorsoup.com/calculators/geometry-solids/sphere.php//
+let radius2=20
+let volume=4/3*pi*(radius2*radius2*radius2)
+console.log("The volume of a sphere with radius "+radius2+" is "+volume)
+   
+/* 
+Radio Transmission to Mars
+*/
+//http://www.calculatorsoup.com/calculators/math/speed-distance-time-calculator.php//
+let planet="Mars" 
+let distance=34000000
+const time=distance/186282
+console.log("It takes "+time+" seconds for a radio transmission to reach "+planet)
+   </script>
+  </body>
+</html>
