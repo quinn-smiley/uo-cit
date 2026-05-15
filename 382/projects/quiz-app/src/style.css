@@ -1,0 +1,195 @@
+
+/* -------- Root, colors, and base -------- */
+:root {
+  --bg: #0b0c10;
+  --panel: #111318;
+  --elev: #171a21;
+  --text: #e6e6e6;
+  --muted: #a8b3cf;
+  --border: #262a33;
+  --primary: #7c9cff;
+  --primary-600: #6889ff;
+  --ring: rgba(124,156,255,0.55);
+  --radius: 14px;
+  --radius-sm: 10px;
+
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f7f8fb;
+    --panel: #ffffff;
+    --elev: #ffffff;
+    --text: #0f172a;
+    --muted: #4b5563;
+    --border: #e5e7eb;
+    --primary: #3b82f6;
+    --primary-600: #2563eb;
+    --ring: rgba(37,99,235,0.35);
+  }
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #0f1117);
+  color: var(--text);
+}
+
+/* -------- Layout -------- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  position: sticky;
+  top: 16px;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+.app-title {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+}
+
+.nav { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* -------- Buttons -------- */
+.btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--elev);
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform .06s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+}
+.btn:disabled { opacity: 0.55; cursor: not-allowed; }
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  border-color: transparent;
+}
+.btn-primary:hover { background: var(--primary-600); }
+
+/* -------- Sections -------- */
+.section { margin-top: 18px; }
+.section-header {
+  display: flex; align-items: baseline; gap: 12px; margin-bottom: 12px;
+}
+.section-title { margin: 0; font-size: 18px; }
+.muted { color: var(--muted); font-size: 13px; }
+.empty-state {
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* -------- Grid of cards -------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 120px auto;
+  transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in oklab, var(--border) 65%, var(--primary));
+  box-shadow: 0 6px 24px -12px rgba(0,0,0,0.35);
+}
+.card:focus-within {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+.thumb {
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.thumb-initials {
+  text-shadow: 0 2px 10px rgba(0,0,0,0.35);
+}
+
+.card-body {
+  padding: 12px 12px 14px;
+  display: grid;
+  gap: 8px;
+}
+.card-title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-meta { margin: 0; color: var(--muted); font-size: 13px; }
+.card-actions { margin-top: 6px; }
+
+/* -------- Forms (Builder / Taker) -------- */
+form { display: grid; gap: 14px; }
+label { display: grid; gap: 6px; font-size: 14px; }
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--elev);
+  color: var(--text);
+}
+input[type="text"]:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+  border-color: transparent;
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  background: var(--panel);
+}
+legend { color: var(--muted); padding: 0 4px; }
+
+.controls {
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+.helper { color: var(--muted); font-size: 12px; }
