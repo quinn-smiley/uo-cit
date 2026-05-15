@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> CSS Transforms and HTML Table </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1>Lab8: CSS Transform Properties</h1>
+
+    <div class="exercise-description">
+      <p>This lab demonstrates the power of CSS transform properties to create interactive elements. 
+        Hover over each underwater image to see different transform effects applied. 
+        Each image has its own unique rotation and scaling effect. The table below will dynamically 
+        highlight information about the specific transformation being applied to the image you're hovering over.</p>
+      <p>These transforms use a combination of <code>rotate()</code> and <code>scale()</code> functions, along with transitions 
+        to create smooth animations. You will also learn to use the HTML table elements.</p>
+    </div>
+
+    <ul class="clearfix">
+      <li>
+        <figure>
+          <a href="#"><img src="images/anchovies.jpg" id="img1" alt="School of anchovies"></a>
+          <figcaption>School of anchovies</figcaption>
+        </figure>
+      </li>
+      <!-- TODO
+            Please add the rest of the images the appropriate figcaption -->
+            <li>
+              <figure>
+                <a href="#"><img src="images/jellyfish1.jpg" id="img2" alt="School of anchovies"></a>
+                <figcaption>Orange Jellyfish</figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="#"><img src="images/bluejellyfish.jpg" id="img3" alt="School of anchovies"></a>
+                <figcaption>Transluscent Jellyfish</figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="#"><img src="images/seadragon.jpg" id="img4" alt="School of anchovies"></a>
+                <figcaption>Yellow Seadragon</figcaption>
+              </figure>
+            </li>
+        
+      <li>
+        <div class="table-container">
+          <table class="info-table">
+            <thead>
+              <tr>
+                <th>Image Name</th>
+                <th>Transformation</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="info-row row1">
+                <td>Anchovies</td>
+                <td>rotate(-3deg) scale(1.5)</td>
+                <td>Rotates slightly counterclockwise and enlarges to 150% of original size</td>
+              </tr>
+              <!-- TODO
+              Please add the rest of the rows the appropriate content -->
+              <tr class="info-row row2">
+                <td>Orange Jellyfish</td>
+                <td>rotate(5deg) scale(1.5)</td>
+                <td>Rotates clockwise and enlarges to 150% of original size</td>
+              </tr>
+
+              <tr class="info-row row3">
+                <td>Transluscent Jellyfish</td>
+                <td>rotate(-7deg) scale(1.5)</td>
+                <td>Rotates more counterclockwise and enlarges to 150% of original size</td>
+              </tr>
+
+              <tr class="info-row row4">
+                <td>Yellow Seadragon</td>
+                <td>rotate(2deg) scale(1.5)</td>
+                <td>Rotates slightly clockwise and enlarges to 150% of original size</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </li>
+    </ul>
+
+  </body>
+</html>

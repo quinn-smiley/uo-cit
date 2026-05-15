@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="CS 110 - Project 3">
+    <meta name="author" content="Quinn Smiley">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="styles/aboutme.css">
+  </head>
+  <body class="backgroundimage">
+    <nav id="nav-select">
+        <div id="title" class="titlebox">
+            <h1>Nails by Quinn</h1>
+            <div class="nav-links active" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="#booking">Book</a>
+                <a href="#lookbook">Lookbook</a>
+                <a href="#services-title">Services</a>
+                <a href="#priceguide">Price Guide</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="#contactinfo">Contact</a>
+            </div>
+            <a href="#navLinks" id="menu-btn" onclick="getMenu()">Menu</a>
+        </div>
+    </nav>
+    <section id="about-me">
+        <h1 id="about-title">About Me</h1>
+        <section id="about">
+            <div id="profile-pic">
+                <img src="project-2-images/profile-pic.jpg " alt="profile-pic" id="about-pic">
+            </div>
+            <div id="about-body">
+                <h2 id="about-name">Jane Doe</h2>
+                <div id="about-text">
+                    <p>Hi! My name is Jane Doe and I am a web-developer and nail tech. I first found my love for nail art through art classes at my college coupled with a friend who inspired me to get into the industry. Since then I have had a large client base and provide a variety of different polish and acrylic types. Additionally, as I became more interested in web-design, I decided to create my own website to further my buisness as well as my coding skills.</p> 
+                    
+                    <p>When I'm not behind a desk, you can find me dancing, playing soccer, painting, drawing, crafting, or hanging out with friends. My goal is to continue to grow my coding skills and possibly inspire others to explore computer science as a college major or profession. Without my website my business would be okay, but it would not be as successful as it is now. Learning to code allows you to reach more people and apply technological knowledge to whatever industry you are a part of.</p>
+                    <div id="resume-btn">
+                        <button onclick="getResume()">View My Resume</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script>
+        function submitForm(){
+            document.getElementById('thank-you-page').style.display='block';
+            document.getElementById('start-title').style.display='none';
+            document.getElementById('submit-form').style.display='none';
+        }
+        function getMenu(){
+            console.log("open")
+            document.getElementById('navLinks').style.visibility='visible';
+        }
+    
+        function setup(){
+            window.addEventListener("click", function(){
+                document.getElementById('navLinks').style.visibility='hidden';
+                console.log("hide")
+            })
+            document.getElementById('menu-btn').addEventListener("click", function(event){
+                event.stopPropagation();
+                console.log("stopped")
+            })
+            document.getElementById('navLinks').addEventListener("click", function(event){
+                event.stopPropagation();
+                console.log("stopped")
+            })
+            
+        }
+    
+        function getResume(){
+            window.location.href = 'resume.project2.html';
+        }
+
+        window.addEventListener("DOMContentLoaded", setup)
+    
+    
+    
+    </script>
+  </body>
+  </html>

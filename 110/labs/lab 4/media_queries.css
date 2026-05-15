@@ -1,0 +1,145 @@
+
+/* || RESET */
+/* Universal selector (*) targets all elements */
+/* This is a simple CSS reset to remove default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box includes padding and border in element's total width/height */
+  box-sizing: border-box;
+}
+
+/* || GENERAL STYLES */
+/* Base styles that apply before any media queries */
+body {
+  /* Font shorthand: size family */
+  font: 1.5rem "Arial", sans-serif;
+  /* Ensures body takes up at least the full viewport height */
+  min-height: 100vh;
+
+  /* Background styling */
+  background-color: #475569;
+  /* Radial gradient creates a spotlight effect */
+  background-image: radial-gradient(whitesmoke, #475569);
+  /* Flex container setup for sticky footer pattern */
+  display: flex;
+  /* default is row, which was what you saw in lab 3 stater code */
+  flex-direction: column;
+}
+
+/* Common grid layout for major sections */
+/* Using grid for centered content alignment */
+header, nav, main, footer {
+  display: grid;
+  /* place-content centers both horizontally and vertically */
+  place-content: center;
+  /* Single column grid */
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+/* Common styles for header and footer */
+header, footer {
+  /* position: sticky enables sticky positioning */
+  /* https://www.w3schools.com/css/css_positioning.asp */
+  position: sticky;
+  background-color: #1E293B;
+  color: whitesmoke;
+}
+
+/* Header specific styles */
+header {
+  /* Sticks to top of viewport */
+  top: 0;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem;
+  /* Adds visual separation */
+  border-bottom: 2px solid #000;
+}
+
+/* Main content area */
+main {
+  /* flex-grow: 1 allows main to take up remaining space */
+  /* This creates a sticky footer effect */
+  flex-grow: 1;
+}
+
+/* Footer specific styles */
+footer { 
+  /* Sticks to bottom of viewport */
+  bottom: 0;
+}
+
+/* || MEDIA QUERIES */
+/* Each media query targets specific screen sizes */
+
+/* TO DO */
+/* || SMALL */
+/* Applies to screens 576px and wider */
+@media screen and (max-width: 576px){
+  body {
+    background-color: green;
+    background-image: radial-gradient(whitesmoke, green)
+  }
+  nav {
+    display: none;
+  }
+}
+
+
+
+/* TO DO */
+/* || MEDIUM */
+/* Applies to screens 768px and wider */
+@media screen and (min-width: 576px) {
+  body {
+    background-color: gold;
+    background-image: radial-gradient(whitesmoke, gold)
+  }
+}
+
+
+/* TO DO */
+/* || LARGE */
+/* Applies to screens 992px and wider */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: firebrick;
+    background-image: radial-gradient(whitesmoke, firebrick)
+  }
+}
+
+
+/* TO DO */
+/* || XL */
+/* Applies to screens 1200px and wider */
+@media screen and (min-width: 992px) {
+  body {
+    background-color: rebeccapurple;
+    background-image: radial-gradient(whitesmoke, rebeccapurple)
+  }
+}
+
+
+/* TO DO */
+/* || MOBILE DEVICE LANDSCAPE */
+/* Special case for landscape orientation on mobile devices */
+/* max-height: 425px ensures this only applies to shorter screens */
+/* min-aspect-ratio: 7/4 targets wider aspect ratios typical in landscape mode */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+  body {
+    background-color: dodgerblue;
+    background-image: radial-gradient(whitesmoke, dodgerblue)
+  }
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+  nav {
+    display: none;
+  }
+}

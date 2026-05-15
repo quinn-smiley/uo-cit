@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="CS 110 - Project 3">
+    <meta name="author" content="Quinn Smiley">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body class="backgroundimage">
+    <div class="fullbackground">
+
+        <nav id="nav-select">
+            <div id="title" class="titlebox">
+                <h1>Nails by Quinn</h1>
+                <div class="nav-links active" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="#booking">Book</a>
+                    <a href="#lookbook">Lookbook</a>
+                    <a href="#services-title">Services</a>
+                    <a href="#priceguide">Price Guide</a>
+                    <a href="aboutme.html">About Me</a>
+                    <a href="#contactinfo">Contact</a>
+                </div>
+                <a href="#navLinks" id="menu-btn" onclick="getMenu()">Menu</a>
+            </div>
+        </nav>
+
+
+        <section id="booking">
+                <div id="start-title">
+                    <h3>Sign up here to book an appointment</h3>
+                    <div id="bookinglink">
+                        <button onclick="document.getElementById('submit-form').style.display='inline-block'; document.getElementById('start-title').style.display='none'" class="continuebutton">
+                            Book
+                        </button>
+                    </div>
+                </div>
+            <div id="submit-form">
+                <div id="form-title">
+                    <h2>Booking</h2>
+                    <h3>Please fill out the following information to book</h3>
+                </div>
+                        <div class="book-appointment">
+                                <fieldset class="fieldset">
+                                    <ul>
+                                        <li><label class="select-length">Please select a length:</label>
+                                        <li><label><input type="radio" name="length" value="short">Short</label></li>
+                                        <li><label><input type="radio" name="length" value="medium">Medium</label></li>
+                                        <li><label><input type="radio" name="length" value="large">Long</label></li>
+                                        <li><label><input type="radio" name="length" value="extra-large">Extra-Long</label></li>
+                                        <li><label class="select-style">Choose a style:</label></li>
+                                        <li><label><input type="radio" name="style" value="gelx">Gel X</label></li>
+                                        <li><label><input type="radio" name="style" value="acrylic">Acrylic</label></li>
+                                        <li><label class="select-date">Please select the date that works best:</label>
+                                            <input type="text" name="date" id="date-selection" required placeholder="MM/DD/YYYY">
+                                        </li>
+                                        <li>
+                                            Please select the timeslot that works best:
+                                            <select name="timeslot" size="1" required>
+                                                <option label="select"></option>
+                                                <option>8:00 AM</option>
+                                                <option>10:00 AM</option>
+                                                <option>1:00 PM</option>
+                                                <option>3:00 PM</option>
+                                                <option>5:00 PM</option>
+                                                <option>7:00 PM</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label for="img">Please upload a reference image for your nails (if applicable):</label>
+                                            <input type="file" id="img" name="img" accept="image/*">
+                                        </li>
+                                        <li>
+                                            <button onclick="document.getElementById('thank-you-page').style.display='block'; document.getElementById('start-title').style.display='none'; document.getElementById('submit-form').style.display='none';" class="sub-btn">Submit</button>
+                                        </li>
+                                    </ul>
+                                </fieldset>
+                            </div>
+            </div>
+                <div id="thank-you-page">
+                    <h1>Thank you!</h1>
+                </div>
+                <div class="emailimagecontainer">
+                    <img src="images/emailbackground2.jpg" id="emaildesign" alt="clipart">
+                </div>
+            </section>
+
+            <section id="lookbook">
+                <h2>Lookbook</h2>
+            </section>
+            <section class="full-lookbook">
+                        <div class="image-container">
+                            <img src="images/butterfly.jpg" class="butterfly" alt="butterfly">
+                            <div class="image-overlay">
+                                <h2>4.5 stars</h2>
+                                <p>So pretty! Definitely reccomend!</p>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/prom.jpg" class="prom" alt="prom">
+                            <div class="image-overlay">
+                                <h2>5 stars</h2>
+                                <p>Amazing service & reasonable pricing!</p>
+                            </div>
+                        </div>  
+                        <div id="pinkyellowimg" class="image-container">    
+                            <img src="images/pinkyellow.jpg" class="pinkyellow" alt="pinkyellow">
+                            <div class="image-overlay">
+                                <h2>5 stars</h2>
+                                <p>Impressive detail work & great customer service!</p>
+                            </div>
+                        </div> 
+                        <div class="image-container">
+                            <img src="images/hellokitty.jpg" class="hellokitty" alt="hellokitty">
+                            <div class="image-overlay">
+                                <h2>4.5 stars</h2>
+                                <p>Great quality & easy to schedule!</p>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/vivienne.jpg" class="vivienne" alt="vivienne">
+                            <div class="image-overlay">
+                                <h2>5 stars</h2>
+                                <p>My favorite nail spot!</p>
+                            </div>
+                        </div>
+            </section>
+
+
+
+
+    <section id="services-title">
+        <h2>Services</h2>
+    </section>
+
+    <div id="full-service">
+        <div class="containerservice  both">
+            <div class="image-flex">
+
+                <a href="#"><img src="images/valentines.jpg" class="s-img" alt="Gel X"></a>
+
+                <div class="p-container gelx">
+                    <h3>Gel X</h3>
+                    <p>According to Allure, one benefit of Gel-X is easy removal. Additionally, gel requires less agressive preparation and removal. According to Essence, do to the lack of filing required, the risk of inflamed nail beds is reduced. They also do not emit the same chemicals as acrylics do. Gel-X is a healthier way to get nail extensions overall. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerservice  both">
+            <div class="image-flex mirror">
+
+                <a href="#"><img src="images/anniversary.jpg" class="s-img" alt="Acrylic"></a>
+
+                <div class="p-container gelx">
+                    <h3>Acrylic</h3>
+                    <p>According to Allure, acrylics are beneficial in that they do not require an LED lamp to cure and they can be filled regularly without getting an entirely new set. LED lamps can cause skin damage and sunscreen is advised when using these lamps. Additionally, according to Essence, some people have found acrylics to be less likely to cause allergic reactions or inflamtion.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="priceguide">
+        <h2>Price Guide</h2>
+    </section>
+    <section>
+        <div id="pricing">
+            <div id="gelx-pr">
+                <h3>Gel X</h3>
+                <p>Short - start at $35</p>
+                <p>Medium - start at $45</p>
+                <p>Long - start at $55</p>
+                <p>Extra-Long - start at $65</p>
+                <p>Design - $2 per nail or $18 for full set</p>
+                <p>Charms - $2 per nail or $18 for full set</p>
+            </div>
+            <div id="acrylics">
+                <h3>Acrylics</h3>
+                <p>Short - start at $30</p>
+                <p>Medium - start at $40</p>
+                <p>Long - start at $50</p>
+                <p>Extra-Long - start at $60</p>
+                <p>Design - $2 per nail or $18 for full set</p>
+                <p>Charms - $2 per nail or $18 for full set</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contactinfo">
+        <h2>Contact</h2>
+    </section>
+        <div class="contacts">
+            <div id="mail">
+                <img src="images/Pink-Mail-Icon.jpg" class="icon" alt="email-icon">
+                <p class="con">Email: anonymous@example.com</p>
+            </div>
+            <div id="phone">
+                <img src="images/Pink-Phone-Icon.jpg" class="icon" alt="email-icon">
+                <p class="con">Phone: (555)-555-5555</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function submitForm(){
+            document.getElementById('thank-you-page').style.display='block';
+            document.getElementById('start-title').style.display='none';
+            document.getElementById('submit-form').style.display='none';
+        }
+        function getMenu(){
+            console.log("open")
+            document.getElementById('navLinks').style.visibility='visible';
+        }
+    
+        function setup(){
+            window.addEventListener("click", function(){
+                document.getElementById('navLinks').style.visibility='hidden';
+                console.log("hide")
+            })
+            document.getElementById('menu-btn').addEventListener("click", function(event){
+                event.stopPropagation();
+                console.log("stopped")
+            })
+            document.getElementById('navLinks').addEventListener("click", function(event){
+                event.stopPropagation();
+                console.log("stopped")
+            })
+            
+        }
+    
+        window.addEventListener("DOMContentLoaded", setup)
+    
+    
+    
+    </script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+/* Reset default styles and set base font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styles with overlay setup */
+body {
+    line-height: 1.6;               /* Improves text readability */
+    color: #333;                    /* Default text color */
+    padding: 40px 20px;            /* Spacing around content */
+    min-height: 100vh;             /* Minimum full viewport height */
+    position: relative;            /* Required for pseudo-element positioning */
+}
+
+/* Semi-transparent overlay for better text readability */
+body::before {
+    content: '';
+    position: fixed;               /* Fixed position covers entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);  /* White overlay with 90% opacity */
+    z-index: -1;                  /* Places overlay behind content */
+}
+
+/* Header section styling */
+header {
+    width: 100%;                  /* Full width of container */
+    text-align: center;           /* Centers text content */
+    margin-bottom: 30px;          /* Space below header */
+    padding: 30px;                /* Internal spacing */
+    background: rgba(255, 255, 255, 0.95);  /* Semi-transparent background */
+    border-radius: 15px;          /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */
+    backdrop-filter: blur(50px);   /* Frosted glass effect */
+}
+
+/* Header title styling */
+header h1 {
+    font-size: 2.5em;             /* Large title size */
+    color: #222;                  /* Dark text color */
+    margin-bottom: 10px;          /* Space below title */
+}
+
+/* Header subtitle styling */
+header p {
+    font-size: 1.1em;             /* Slightly larger than normal text */
+    color: #555;                  /* Medium gray text */
+}
+
+/* Main container for gallery content */
+.container {
+    max-width: 1200px;            /* Limits width on large screens */
+    margin: 0 auto;               /* Centers container horizontally */
+    display: flex;                /* Enables flexbox layout */
+    flex-wrap: wrap;       /* Allows items to wrap onto multiple lines */
+    gap: 20px;                    /* Space between grid items */
+    justify-content: space-between; /* Distributes space between items */
+}
+
+/* Individual gallery section styling */
+section {
+    flex: 1 1 calc(50% - 20px);  /* Flex grow/shrink and basis for two columns */
+    min-width: 300px;             /* Minimum width before wrapping */
+    margin-bottom: 20px;          /* Space below sections */
+    padding: 25px;                /* Internal spacing */
+    border-radius: 15px;          /* Rounded corners */
+    background: rgba(255, 255, 255, 0.95);  /* Semi-transparent background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Initial shadow state */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transitions for hover effects */
+    backdrop-filter: blur(5px);   /* Frosted glass effect */
+}
+
+/* Hover effect for sections */
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Section heading styling */
+section h2 {
+    font-size: 1.5em;             /* Heading size */
+    color: #333;                  /* Dark text color */
+    margin-bottom: 15px;          /* Space below heading */
+    border-bottom: 2px solid #eee; /* Subtle bottom border */
+    padding-bottom: 8px;          /* Space between text and border */
+}
+
+/* Image container styling */
+.image-container {
+    position: relative;           /* Required for overflow control */
+    overflow: hidden;             /* Clips image zoom effect */
+    border-radius: 10px;          /* Rounded corners for images */
+    margin-bottom: 15px;          /* Space below images */
+}
+
+/* Image styling */
+.image-container img {
+    width: 100%;                  /* Full width of container */
+    /*height: 250px;   */             /* Fixed height for consistency */
+    object-fit: cover;            /* Maintains aspect ratio while filling container */
+    transition: transform 0.3s ease;  /* Smooth zoom transition */
+}
+
+/* Image hover zoom effect */
+section:hover .image-container img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Section paragraph styling */
+section p {
+    font-size: 1em;               /* Standard text size */
+    color: #555;                  /* Medium gray text */
+    line-height: 1.6;             /* Comfortable line spacing */
+}
+
+/* Footer styling */
+footer {
+    width: 100%;                  /* Full width of container */
+    text-align: center;           /* Centers text content */
+    margin-top: 30px;             /* Space above footer */
+    padding: 20px;                /* Internal spacing */
+    background: rgba(255, 255, 255, 0.95);  /* Semi-transparent background */
+    border-radius: 15px;          /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    backdrop-filter: blur(5px);   /* Frosted glass effect */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;        /* Reduced padding on mobile */
+    }
+
+    section {
+        flex: 1 1 100%;           /* Full width sections on mobile */
+    }
+
+    header h1 {
+        font-size: 2em;           /* Smaller title on mobile */
+    }
+
+    .image-container {
+        height: auto;             /* Flexible height for images on mobile */
+    }
+}

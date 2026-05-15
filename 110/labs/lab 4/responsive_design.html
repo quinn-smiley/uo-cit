@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Character encoding declaration - ensures proper text rendering -->
+        <meta charset="UTF-8">
+        
+        <!-- Legacy Internet Explorer compatibility mode -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!-- VIEWPORT META TAG EXPLANATION -->
+        <!-- This meta tag is crucial for responsive design -->
+        <!-- width=device-width: Sets the width of the viewport to the device's screen width -->
+        <!-- initial-scale=1.0: Sets the initial zoom level when the page is loaded -->
+        <!-- Without this tag: -->
+        <!-- - Mobile browsers might use a default viewport width (often 980px) -->
+        <!-- - Media queries might not work as expected -->
+        <!-- - Content might appear very small on mobile devices -->
+        <!-- - Users would need to manually zoom to read content -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Page title that appears in browser tab -->
+        <title>CSS Media Queries</title>
+        
+        <!-- Link to external CSS file -->
+        <!-- Using external CSS allows for better organization and caching -->
+        <link rel="stylesheet" href="media_queries.css">
+    </head>
+
+    <body>
+        <!-- Header section contains the site header and navigation -->
+        <!-- Position: sticky will be applied to this via CSS -->
+        <header>
+            <h1>Header</h1>
+            <!-- Navigation section - will be hidden/shown based on media queries -->
+            <nav><h2>Nav</h2></nav>
+        </header>
+
+        <!-- Main content area -->
+        <!-- Will flex-grow to fill available space between header and footer -->
+        <main>
+            <h2>Main</h2>
+        </main>
+
+        <!-- Footer section -->
+        <!-- Position: sticky will be applied to this via CSS -->
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </body>
+
+</html>

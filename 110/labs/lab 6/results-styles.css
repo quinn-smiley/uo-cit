@@ -1,0 +1,43 @@
+/* results.css - Styles for the order confirmation page */
+
+/* Base page layout */
+body {  
+    background-color: #faf2e4;
+    margin: 0 10%;
+    font-family: sans-serif;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #57b1dc;
+    margin-top: 30px;
+}
+
+/* Subheading style */
+h2 {
+    color: #d1633c;
+    font-size: 1em;
+}
+
+/* Remove default list styling */
+ol, ul { 
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Order information spacing */
+ul li {
+    margin: 0.5em 0;
+}
+
+/* Disclaimer styling */
+p.disclaimer { 
+    border-top: 1px solid #d1633c; 
+    padding-top: 1em;
+    font-size: 0.9em;
+    margin-top: 2em;
+}

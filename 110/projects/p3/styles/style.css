@@ -1,0 +1,904 @@
+
+/*Applies to whole page*/
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.backgroundimage{
+    background-color:#FFF4E7;
+}
+
+img {
+    max-width:200px;
+    border-radius: 35px; 
+    flex: 1 4 calc(50% - 20px); 
+    display: inline-block;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*Applies to most sections*/
+#lookbook, #services-title, #priceguide, #contactinfo {
+    padding-left: 20px;
+    color: white;
+    font-size: 27px;
+    background-color: pink;
+    margin-left: -10px;
+    margin-right: -20px;
+}
+
+/*Title*/
+#title {
+    position: sticky;
+    text-align: center;
+    background: url(topbarbows.jpg) center fixed;
+    background-attachment: fixed;
+    color:white;
+    font-size: 30px;
+    top: 0;
+    padding: 2rem;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+    margin-bottom:50px;
+    display: block;
+}
+
+#nav-select{
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+.nav-links.active {
+    right: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 25px;
+    color: pink;
+    background-color:#FFF4E7;
+    margin-top: 15px;
+}
+
+.nav-links {
+    position: fixed;
+    top: 160px;
+    flex-direction: column;
+    background: white;
+    width: 200px;
+    height: 100vh;
+    padding: 2rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    gap: 1rem;
+    visibility: hidden;
+}
+
+#menu-btn{
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin-top: -70px;
+    margin-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+}
+
+/*Booking section*/
+#booking{
+    text-align:center;
+    min-height:400px;
+    padding-top: 20px;
+    margin:20px;
+    border-radius:25px;
+    background-color: white;
+}
+
+fieldset{
+    border:none;
+}
+
+#bookinglink{
+    text-align: center;
+    padding-right: 38px;
+}
+
+#emaildesign{
+    max-width:250px;
+    max-height: 450px;
+    margin: 0 auto;
+    padding:0;
+}
+
+.emailimagecontainer{
+    margin: 0 auto;
+    padding:20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    bottom:0;
+    margin-bottom: 25px;
+}
+
+.continuebutton{
+    margin-left: 15px;
+    min-width:60px;
+    min-height:35px;
+    background-color: pink;
+    border:3px solid pink;
+    border-radius:5px;
+}
+
+
+
+.button-class{
+    text-decoration: none;
+}
+
+#form-title{
+    text-align:center;
+}
+
+
+#submit-form{
+    background-color: white;
+    border-radius: 20px;  
+    border: 4px solid pink;
+    border-color: pink;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 30px;
+    min-width: 550px;
+    padding-left: 20px;
+    text-align: left;
+    display: none;
+}
+
+.sub-btn{
+    min-width: 60px;
+    min-height: 35px;
+    background-color: pink;
+    border:3px solid pink;
+    border-radius: 5px;
+    margin-left: 290px;
+}
+
+#thank-you-page{
+    background-color: white;
+    border-radius: 20px;  
+    display: inline-block;
+    margin: 30px;
+    padding-left: 20px;
+    text-align: center;
+    display: none;
+}
+
+/*Lookbook section*/
+.full-lookbook{
+    max-width: 1287px;
+    min-height: 250px;
+    margin: auto;
+    padding:20px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-between;
+    overflow:auto;
+}
+
+#pinkyellowimg{
+    min-width: 306px;
+}
+
+.image-container{
+    position: relative;
+    max-width: 206px;
+    margin: 0 auto;
+    border-radius: 35px;
+    overflow: hidden;
+    max-height: 272px;
+    float: left;
+    width: 20%;
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+    color:#FFF4E7;
+}
+
+.image-overlay{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    max-height: 272px;
+    border-radius: 35px;
+}
+
+.image-overlay:hover{
+    opacity: 1;
+}
+
+.butterfly, .prom, .pinkyellow, .hellokitty, .vivienne {
+    border:3px solid pink;
+}
+
+
+.pinkyellow{
+    min-height:265px;
+    min-width:300px;
+}
+
+
+/*Services section*/
+
+#full-service{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 200px;
+}
+
+/* Both */
+
+.containerservice:hover{
+    box-shadow: 0 4px 15px #DC879A;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.containerservice{
+    min-width: 600px;
+    max-height: 300px;
+    flex: 0.3;
+    border-radius: 35px;
+    flex-wrap: nowrap;
+    padding-bottom: 15px;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.p-container{
+    max-width: 300px;
+    color: white;
+}
+
+.image-flex{
+    flex-direction: row;
+    margin: 20px;
+}
+
+.mirror{
+    display: flex;
+    gap: 50px;
+    flex-direction: row-reverse;
+}
+
+/*Gel X*/
+
+.gelx{
+    float: right;
+}
+
+
+
+
+/* Acrylic*/
+
+.both{
+    background-color: pink;
+}
+
+
+
+
+
+/*Price guide section*/
+
+#pricing{
+    margin-left: 180px;
+}
+
+#gelx-pr, #acrylics{
+    font-size: 25px;
+    background-color: white;
+    border-radius: 20px;  
+    border:4px solid pink;
+    border-color: pink;
+    display: inline-block;
+    margin:30px;
+    min-width:550px;
+    padding-left: 20px;
+}
+
+#gelx-pr:hover{
+    flex: 1 1 calc(50% - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px #E0535B;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+#acrylics:hover{
+    flex: 1 1 calc(50% - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px #E0535B;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+
+
+/*Contacts section*/
+
+.contacts{
+    flex-wrap: wrap;
+    display:inline-block;
+}
+
+.icon{
+    max-width:75px;
+    border-radius:30px;
+    padding:15px;
+}
+
+#mail, #phone{
+    display: flex;
+}
+
+
+.con{
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+
+/*Screen Sizing*/
+
+@media (width: 1920px){
+    #full-service{
+        margin-left: 220px;
+    }
+
+
+    #pricing{
+        margin-left: 120px;
+    }
+}
+
+
+
+
+@media (max-width: 1468px){
+
+    #full-service{
+        margin-left: -100px;
+    }
+
+
+    #gelx-pr{
+        margin-left: 125px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 768px){
+
+    /*Lookbook*/
+    .full-lookbook{
+        flex-wrap: wrap;
+        display: inline-block;
+        max-width: 700px;
+        max-height: 1500px;
+        gap: 50px;
+        margin: 0px;
+    }
+
+
+    #pinkyellowimg{
+        margin-left: 137px;
+        overflow: visible;
+        margin-top: -40px;
+    }
+
+    .pinkyellow{
+        min-width: 460px;
+    }
+    
+    .image-container{
+        overflow: visible;
+        display:block;
+        margin: 60px;
+    }
+
+    .butterfly, .prom, .hellokitty, .vivienne {
+        margin-left: 65px;
+        min-width: 225px;
+    }
+    
+    .hellokitty, .vivienne{
+        margin-top: 20px;
+    }
+
+    .butterfly, .prom{
+        margin-top:-80px;
+    }
+
+    .image-overlay:hover{
+        opacity: 0;
+    }
+    /*Services*/
+    
+    /* Gel X*/
+
+    .containerservice, .gel{
+        margin-left: 10px;
+    }
+    
+    #containerservicegelx{
+        margin-left: 60px;
+    }
+    
+    /* Acrylic*/
+    
+    .containerservice, .acr{
+        margin-left: 10px;
+    }
+
+    #containerserviceacrylic{
+        margin-left: 65px;
+        min-width: 600px;
+    }
+
+    #full-service{
+        display: grid;
+        margin-left: 0px;
+    }
+
+
+    
+/*Price Guide*/
+
+#pricing{
+    flex-wrap: wrap;
+    margin-left: 0px;
+}
+
+#gelx-pr, #acrylics{
+    display: inline-block;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#acrylics{
+    margin-left: 90px;
+}
+
+#gelx-pr{
+    margin-left: 90px;
+}
+
+/*Contacts*/
+.contacts{
+    flex-wrap: wrap;
+    display:inline-block;
+}
+
+#mail, #phone{
+    display: flex;
+}
+.icon{
+    max-height: 60px;
+    max-width: 60px;
+}
+
+.con{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+}
+
+
+@media (max-width: 695px){
+    /*Title*/
+
+    #title{
+        margin-right: -145px;
+    }
+
+    #lookbook, #services-title, #priceguide, #contactinfo{
+        margin-right: -145px;
+    }
+
+    /*Booking*/
+    #booking{
+        margin-right: -115px;
+    }
+
+    /*Lookbook*/
+    .full-lookbook{
+        flex-wrap: wrap;
+        display: inline-block;
+        max-width: 700px;
+        max-height: 1500px;
+        gap: 50px;
+        margin-right: -145px;
+    }
+
+    .pinkyellow{
+        min-width: 460px;
+    }
+    
+    .image-container{
+        overflow: visible;
+        display:block;
+        margin: 60px;
+    }
+
+    .butterfly, .prom, .hellokitty, .vivienne {
+        margin-left: 65px;
+        min-width: 225px;
+    }
+
+    .image-overlay:hover{
+        opacity: 0;
+    }
+    /*Services*/
+    
+    /* Gel X*/
+
+    .containerservice, .gel{
+        margin-left: 10px;
+    }
+    
+    #containerservicegelx{
+        margin-left: 60px;
+    }
+    
+    /* Acrylic*/
+    
+    .containerservice, .acr{
+        margin-left: 10px;
+    }
+
+    #containerserviceacrylic{
+        margin-left: 65px;
+        min-width: 600px;
+    }
+
+    .full-service{
+        display: flex;
+    }
+
+
+    
+/*Price Guide*/
+
+#pricing{
+    flex-wrap: wrap;
+}
+
+#gelx-pr, #acrylics{
+    display: inline-block;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#acrylics{
+    margin-left: 90px;
+}
+
+#gelx-pr{
+    margin-left: 90px;
+}
+
+/*Contacts*/
+.contacts{
+    flex-wrap: wrap;
+    display:inline-block;
+}
+
+#mail, #phone{
+    display: flex;
+}
+.icon{
+    max-height: 60px;
+    max-width: 60px;
+}
+
+.con{
+    font-size: 20px;
+    margin-top: 30px;
+}
+}
+
+@media (max-width: 576px){
+    /* All */
+    #title {
+        margin-right: -145px;
+    }
+
+    .lookbook, .services-title, .priceguide, .contactinfo {
+       display:block;
+       font-size: 20px;
+        margin-right: -8px;
+    }
+
+    #menu-btn{
+        margin-top: -70px;
+    }
+
+    /* Booking & Form*/
+    #booking{
+        text-align:center;
+        min-height:400px;
+        max-width: 450px;
+        margin-left: 75px;
+    }
+    
+    #emaildesign{
+        max-width: 250px;
+    }
+    
+    .emailimagecontainer{
+        max-width: 250px;
+    }
+
+    fieldset{
+        display: flex;
+    }
+
+    #form-title{
+        font-size: 15px;
+        text-align: center;
+        max-width: 325px;
+        padding-left: 12px;
+    }
+
+    .book-appointment{
+        font-size: 13px;
+        display: flex;
+        max-width: 150px;
+    }
+
+    ul{
+        max-width: 150px;
+        padding: 10px;
+    }
+
+    #submit-form{
+        margin:10px;
+        padding: 0px;
+        min-width: 350px;
+    }
+
+    .sub-btn{
+        padding: 0px;
+        margin: 0px;
+        margin-top: 10px;
+        margin-left: 125px;
+    }
+
+    #thank-you-page{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    /* Lookbook */
+
+    .full-lookbook{
+        flex-wrap: wrap;
+        display: grid;
+        max-width: 576px;
+        grid-column:auto;
+        max-height: 2000px;
+    }
+
+
+    #pinkyellowimg{
+        margin-left: 80px;
+    }
+    
+    .image-container{
+        overflow: visible;
+        display:block;
+    }
+
+    .butterfly, .prom, .hellokitty, .vivienne {
+        margin-left: 120px;
+    }
+
+    .image-overlay:hover{
+        opacity: 0;
+    }
+
+    /*Services*/
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .full-service{
+        margin-left: 70px;
+    }
+    
+    /* Gel X*/
+    #containerservicegelx{
+        margin-left: 0px;
+        min-width: 400px;
+        flex-wrap: wrap;
+        padding-right: 0px;
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+    }
+
+    .containerservice, .gel{
+        margin-left: 30px;
+    }
+
+    #gelx{
+        margin-left: -15px;
+        max-width: 330px;
+    }
+
+    #p-container-gel{
+        min-width: 300px;
+        float: none;
+        padding-left: 25px;
+    }
+    
+    
+    /* Acrylic*/
+    #containerserviceacrylic{
+        margin-left: 0px;
+        min-width: 400px;
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .containerservice, .acr{
+        margin-left: 30px;
+    }
+    
+    #acrylic{
+        margin-left: -15px;
+        max-width: 330px;
+    }
+    
+    
+    #p-container-acrylic{
+        min-width:300px;
+        padding-left: 25px;
+    }
+
+    #full-service{
+        display: grid;
+        margin-left: 70px;
+    }
+
+
+    
+/*Price Guide*/
+
+#pricing{
+    flex-wrap: wrap;
+}
+
+#gelx-pr, #acrylics{
+    font-size: 17px;
+    margin-left: 45px;
+    min-width: 500px;
+    display: inline-block;
+    flex-wrap: wrap;
+    max-height: 500px;
+
+}
+    
+#gelx-pr{
+    margin-left: 45px;
+}
+
+/*Contacts*/
+
+#mail, #phone{
+    display: flex;
+}
+.icon{
+    max-height: 45px;
+    max-width: 45px;
+}
+
+.con{
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+
+
+}
+
+
+@media (max-width: 495px){
+    /*Title*/
+    #title {
+        display: block;
+        margin-right: -260px;
+        align-items: center;
+    }
+
+    #lookbook, #services-title, #priceguide, #contactinfo {
+       display:block;
+       margin-right: -260px;
+    }
+    /* Booking*/
+
+    #booking{
+        margin-left: 70px;
+        min-height:400px;
+        min-width: 450px;
+    }
+
+
+    .full-lookbook{
+        margin: 0px;
+        margin-right: -190px;
+    }
+
+
+    #full-service{
+        margin-right: -175px;
+        margin-left: 65px;
+    }
+}
+
+@media (max-width: 375px){
+
+   
+
+
+
+    #full-service{
+        margin-left: 0px;
+        flex-direction: column;
+        margin-left: -175px;
+
+    }
+
+    .containerservice{
+        flex-direction: column;
+        max-width: 175px;
+        max-height: 600px;
+        flex: 0.1;
+    }
+
+    .s-img{
+        max-width: 100px;
+    }
+
+    #pricing{
+        margin-right: 0px;
+    }
+}

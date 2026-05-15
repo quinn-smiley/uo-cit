@@ -1,0 +1,93 @@
+.icon {
+    max-width:30px;
+    display:block;
+    margin:10px auto;
+    float:left;
+    margin-top:-0.5px;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: url(GreenBackground.jpg) center center fixed;
+    background-size:cover;
+    color:#14332F;
+    line-height: 1.6;
+    padding: 40px 20px;
+    min-height: 100vh;
+    position: relative;
+}
+
+a:hover {
+    color:#516559
+}
+
+.image_1 {
+    max-width:200px;
+    border:3px solid#14332F;
+    border-radius: 35px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex: 1 1 calc(50% - 20px);
+    min-width: 300px;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    background: #eeeee9;
+    box-shadow: 0 4px 15px #516559;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+@media screen and (max-width: 405px){
+    body{
+        padding: 10px;
+    }
+    .card{
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    body {
+        font-size: 1rem;
+    }
+    section {
+        padding: 25px;
+    }
+  }
+
+  @media screen and (min-width: 576px){
+    body{
+        font-size: 1.5rem;
+    }
+    section{
+        padding: 35px;
+    }
+    .image_1{
+        max-width: 250px;
+    }
+    .icon{
+        max-width: 50px;
+    }
+  }
+
+  @media screen and (min-width: 768px){
+    body{
+        font-size: 1.75rem;
+    }
+    section{
+        padding: 37px;
+    }
+    .image_1{
+        max-width: 265px;
+    }
+  }
+  .card:hover{
+    transform: translate(0px, -15px)
+  }

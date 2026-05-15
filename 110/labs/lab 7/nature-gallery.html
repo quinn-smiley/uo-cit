@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nature Gallery</title>
+        <!-- Linking external CSS file for styling -->
+        <link rel="stylesheet" href="nature-gallery-styles.css">
+    </head>
+    <body>
+        <!-- Main title of the page -->
+        <h1 class="main-title">Interactive Nature Gallery</h1>
+        
+        <!-- Grid Section -->
+        <section class="grid-section">
+            <div class="container">
+                <h2>Interactive Image Grid</h2>
+                <p class="section-description">
+                    Discover our responsive image grid with hover effects. This showcase demonstrates 
+                    CSS Grid layout combined with transform animations and overlay text effects to 
+                    create an engaging user experience.
+                </p>
+                
+                <!-- Grid container for images -->
+                <div class="grid">
+                    <!-- Individual grid item with an image and overlay text -->
+                    <div class="grid-item">
+                        <img src="images/flowers.png" alt="Wildflower Meadow">
+                        <div class="grid-item-overlay">A beautiful meadow filled with colorful wildflowers beneath a summer sky</div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/berries.png" alt="Blueberries">
+                        <div class="grid-item-overlay">Fresh blueberries and cranberries growing on bushes in the morning light</div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/nature3.png" alt="Forest Path">
+                        <!-- add the overlay text for this image -->
+                        <div class="grid-item-overlay">A wooden walkway winding through a mystical forest</div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/nature_background.png" alt="Forest Trail">
+                        <!-- add the overlay text for this image -->
+                        <div class="grid-item-overlay">A serene forest path lined with evergreen trees and wildflowers</div>
+                        <!--TODO-->
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/nature2.png" alt="Mountain Valley">
+                        <!-- add the overlay text for this image -->
+                        <div class="grid-item-overlay">Majestic mountain peaks rising above a valley filled with
+                            wildflowers</div>
+                        <!--TODO-->
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/nature1.png" alt="River Trail">
+                        <!-- add the overlay text for this image -->
+                        <div class="grid-item-overlay">A winding trail along a crystal-clear mountain stream</div>
+                        <!--TODO-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CSS-only Carousel Section -->
+        <section class="carousel-section">
+            <div class="container">
+                <h2>Image Carousel</h2>
+                <p class="section-description">
+                    Explore this interactive carousel featuring beautiful nature photography. 
+                    This component demonstrates the power of pure CSS animations and transitions 
+                    to create smooth sliding effects and interactive navigation.
+                </p>
+                
+                <!-- Carousel wrapper -->
+                <div class="carousel">
+                    <!-- Radio buttons for slide navigation -->
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <!-- add 3 more radio buttons with ids: slide4 to slide6 -->
+                    <input type="radio" name="slide" id="slide4">
+                    <input type="radio" name="slide" id="slide5">
+                    <input type="radio" name="slide" id="slide6">
+                    
+                    <!--TODO-->
+
+                    <!-- Carousel slides container -->
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="images/flowers.png" alt="Wildflower meadow with mountains">
+                        </div>
+                        <div class="slide">
+                            <img src="images/berries.png" alt="Blueberries and cranberries">
+                        </div>
+                        <div class="slide">
+                            <img src="images/nature1.png" alt="Forest pathway with sunlight">
+                        </div>
+                        <div class="slide">
+                            <img src="images/nature2.png" alt="Forest trail with flowers">
+                        </div>
+                        <div class="slide">
+                            <img src="images/nature3.png" alt="Mountain valley with wildflowers">
+                        </div>
+                        <div class="slide">
+                            <img src="images/nature_background.png" alt="River trail with flowers">
+                        </div>
+                    </div>
+            
+                    <!-- Navigation dots for carousel -->
+                    <div class="navigation">
+                        <label class="nav-btn" for="slide1"></label>
+                        <label class="nav-btn" for="slide2"></label>
+                        <label class="nav-btn" for="slide3"></label>
+                        <!-- add 3 more labels with for: slide4 to slide6 -->
+                        <label class="nav-btn" for="slide4"></label>
+                        <label class="nav-btn" for="slide5"></label>
+                        <label class="nav-btn" for="slide6"></label>
+                        <!--TODO-->
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 Nature & Hiking | All Rights Reserved | images are created by Copilot</p>
+        </footer>
+    </body>
+</html>

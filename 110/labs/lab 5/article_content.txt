@@ -1,0 +1,87 @@
+<article>
+    <h1>9.6 Copyright on the Internet</h1>
+    <p>In the 1950s, it was not practical to copyabook or an 
+        audio recording. Copying steadily became cheaper, 
+        however, and by the 1990s it was easy to makeadigital 
+        copy of a book or a record, and those copies could be 
+        made in quantity and sent to others via the Internet 
+        at high speed and zero cost.
+    </p>
+    <p>
+        The entertainment industry, through trade groups like the 
+        Recording Industry Association of America (RIAA) and the 
+        Motion Picture Association of America (MPAA), has been 
+        tireless in trying to prevent sharing of copyrighted material. 
+        This has included lawsuits and threats of legal action against 
+        large numbers of alleged copyright infringers, as well as intense 
+        lobbying efforts in support of legislation to make such activities 
+        illegal. Piracy will likely always be with us, but it appears that 
+        by charging reasonable prices for guaranteed quality, businesses 
+        can greatly reduce its effects and still make money; Apple’s iTunes 
+        music store is an example, as are streaming services like Netflix and 
+        Spotify.  
+    </p>
+    <p>
+        In the US, the primary law for digital copyright issues is the 1998 
+        Digital Millennium Copyright Act or DMCA, which made it illegal to 
+        circumvent copyright protection techniques on digital media, 
+        including distribution of copyrighted material on the Internet; other 
+        countries have analogous laws. The DMCA is the legal mechanism used by 
+        the entertainment industry to go after copyright violators. The DMCA 
+        provides a “safe harbor” provision for Internet service providers: if 
+        an ISP is notified by a legitimate copyright holder that a user of the 
+        ISP is supplying copyrighted material, the ISP itself is not liable 
+        for copyright violation if it requires the infringer to remove the 
+        copyrighted material. This safe harbor provision is important at 
+        universities, where the university is the ISP for its students and faculty.
+        Thus every university has some official who deals with allegations 
+        of infringement.
+    </p>
+    <blockquote>
+        To report copyright infringements involving Princeton University information
+        technology resources or services, please notify [...], the agent designated under
+        the Digital Millennium Copyright Act, P.L. 105-304, to respond to reports
+        alleging copyright infringements on Princeton University website locations.
+    </blockquote>
+    <blockquote>Figure 9.11 is the DMCA notice for Princeton.</blockquote>
+    <p>The DMCA is also invoked (on both sides) in legal tussles between more evenly
+        matched opponents. In 2007 Viacom, a major film and TV company, sued Google
+        for $1 billion over copyrighted material available on YouTube, a Google service.
+        Viacom said that the DMCA was not meant to enable wholesale theft of copyrighted
+        material. Part of Google’s defense was that it responded appropriately to DMCA
+        take-down notices when they were properly presented, but that Viacom had not done
+        so. A judge ruled in favor of Google in June 2010, an appeals court reversed part of
+        the decision, then another judge ruled in favor of Google, again on the grounds that
+        YouTube was following DMCA procedures properly. The parties settled in 2014 but
+        regrettably the terms of the settlement were not made public.
+    </p>
+    <p>
+    In 2004, Google beganaproject to scan a large number of books held primarily in
+    research libraries. In 2005 it was sued by the Authors Guild, which alleged that
+    Google was profiting by violating the copyrights of authors. The case dragged on for
+    a very long time, but a decision in 2013 said that Google was not guilty, on the
+    grounds that it preserved books that might otherwise be lost, made them available in
+    digital form for scholarship, and could even generate income for authors and publishers. 
+    An appeals court affirmed this decision late in 2015, based in part on the fact that Google made only limited amounts of each book available online. The Authors
+    Guild appealed to the Supreme Court, which in 2016 declined to hear the case, thus
+    effectively ending the dispute.
+    </p>
+    <p>This is another case where one can see reasonable arguments on both sides. As a
+        researcher I would like to be able to search in books that I might otherwise not be
+        able to see or even know about, but as an author I want people to buy legitimate
+        copies of my books rather than download pirated copies.
+    </p>
+    <p>It’s easy to file DMCA complaints. I sent one to Scribd about an illegal uploaded
+    copy of the first edition of this book, and they took it down within 24 hours. Unfortunately, most 
+    illegal copies of most books are basically impossible to remove.
+    </p>
+    <p>The DMCA is sometimes used in an anti-competitive way that was presumably
+    not part of its original intent. For example, Philips makes “smart” network-connected light 
+    bulbs that allow controllers to adjust their brightness and color. Late in
+    2015, Philips announced that it was modifying the firmware so that only Philips bulbs
+    could be used with Philips controllers. The DMCA would prevent anyone else from
+    reverse-engineering the software to allow third-party bulbs. There wasaconsiderable outcry and 
+    Philips backed down for this specific case, but other companies continue to use the DMCA to limit competition, for example with replacement cartridges
+    for printers and coffee makers. 
+    </p>
+</article>

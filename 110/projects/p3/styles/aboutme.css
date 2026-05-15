@@ -1,0 +1,124 @@
+/*Applies to All*/
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.backgroundimage{
+    background-color:#FFF4E7;
+}
+
+/*Title & Nav*/
+#title {
+    text-align: center;
+    background: url(topbarbows.jpg) center fixed;
+    background-attachment: fixed;
+    position: sticky;
+    color:white;
+    font-size: 30px;
+    top: 0;
+    padding: 2rem;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+    margin-bottom:50px;
+    z-index: 999;
+    display: block;
+}
+
+.nav-links.active {
+    right: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 25px;
+    color: pink;
+    background-color:#FFF4E7;
+}
+
+.nav-links {
+    position: fixed;
+    top: 160px;
+    right: -100%;
+    flex-direction: column;
+    background: white;
+    width: 200px;
+    height: 100vh;
+    padding: 2rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    gap: 1rem;
+    visibility: hidden;
+}
+
+#menu-btn{
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin-top: -70px;
+    margin-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+}
+
+#about-me{
+    background-color: white;
+    border-radius: 45px;
+    max-width: 1000px;
+    margin: auto;
+    min-height: 675px;
+}
+
+/* Profile Pic*/
+
+#about-pic{
+    border:3px solid pink;
+    border-radius: 35px;
+    max-width: 350px;
+    margin-left: 30px;
+}
+
+#about{
+    display: flex;
+}
+
+/*Text*/
+#about-title{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    color: #D45D5F;
+}
+
+#about-name{
+    font-size: 30px;
+}
+
+#about-body{
+ margin-left: 10px;
+ color: #D45D5F;
+}
+
+#about-text{
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+#resume-btn{
+    padding-top: 50px;
+    padding-left: 45px;
+}
+
+button{
+    border: none;
+    min-width: 90px;
+    min-height: 45px;
+    background-color: pink;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}

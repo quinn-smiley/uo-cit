@@ -1,0 +1,83 @@
+/* add your css styles here */
+
+* {
+    border: 1px solid rgb(22, 21, 21);
+    background: rgba(137, 135, 135, 0.1);
+}
+
+/*body {
+    display: grid;
+    grid-template-columns: 300px 300px;
+}*/
+
+body {
+    min-height: 100vh; /* 100vh = 100% of viewport height */
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "navbar navbar" /* Navbar spans full width */
+        "sidebar main" /* Sidebar left, main content right */
+        "sidebar main" /* Repeated for height */
+        "footer footer" /* Footer spans full width */
+}
+
+/*1:2 ratio
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}*/
+
+/*1:2 ratio
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}*/
+
+/* three columns
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}*/
+
+.nav {
+    top: 0;
+    position: sticky;
+    grid-area: navbar;
+    background-color: darkgray;
+    color: white;
+    padding: 2em; /* 2em = 2x font size for more spacious header */
+}
+.sidebar {
+    height: calc(100vh - 136px); /* Subtract navbar (84px) and footer (52px)*/
+    top: 84px;
+    position: sticky;
+    align-self: start;
+    grid-area: sidebar;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    bottom: 0;
+    position: sticky;
+    grid-area: footer;
+    background-color: darkgray;
+    color: white;
+    padding: 1em; /* 1em = 1x font size for standard footer spacing */
+}
+
+@media(max-width: 768px){
+    body {
+        grid-template-columns: 1fr;
+    }
+    .nav {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+}

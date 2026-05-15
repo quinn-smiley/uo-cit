@@ -1,0 +1,142 @@
+body {
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    margin: 3em 6em;
+    font-weight: normal;
+}
+  
+h1 {
+    color: #333;
+    border-bottom: 2px solid #4682B4;
+    padding-bottom: 10px;
+}
+
+.exercise-description {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-left: 4px solid #4682B4;
+    margin-bottom: 30px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+
+/* TODO
+please add the styling for the figcaption */
+figcaption{
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+li {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+li:last-of-type {
+    margin-right: 0;
+}
+
+a {
+    display: block;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    transition: transform 0.3s linear;
+}
+
+a:hover #img1, a:focus #img1 {
+    transform: rotate(-3deg) scale(1.5);
+} 
+/* TO DO
+Please add the rest of the image on hover animations */
+a:hover #img2, a:focus #img2 {
+    transform: rotate(5deg) scale(1.5);
+} 
+
+a:hover #img3, a:focus #img3 {
+    transform: rotate(-7deg) scale(1.5);
+} 
+
+a:hover #img4, a:focus #img4 {
+    transform: rotate(2deg) scale(1.5);
+} 
+
+a:hover img{
+    box-shadow: 6px 6px 6px rgba(0,0,0,.3);
+}
+
+/* Clearfix for the floating elements */
+.clearfix::after a:focus img{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Table styles */
+
+.info-table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top:40px;
+}
+
+.info-table th, td{
+    border: 1px solid #ddd;
+    padding:8px;
+    text-align: left;
+}
+
+.info-table th{
+    padding-top:12px;
+    padding-bottom:12px;
+    background-color:#4682B4;
+    color: white;
+}
+/* TO DO
+Please add styling for the table */
+
+/* Default styling for rows */
+.info-row {
+    transition: background-color 0.3s ease;
+}
+
+/* Highlight specific row on hover */
+li:nth-child(1):hover ~ li .table-container .row1,
+li:nth-child(1):focus-within ~ .table-container .row1 {
+    background-color: #e6f3ff;
+    box-shadow: 0 0 8px rgba(70, 130, 180, 0.5);
+}
+
+li:nth-child(2):hover ~ li .table-container .row2,
+li:nth-child(2):focus-within ~ .table-container .row1 {
+    background-color: #e6f3ff;
+    box-shadow: 0 0 8px rgba(70, 130, 180, 0.5);
+}
+
+li:nth-child(3):hover ~ li .table-container .row3,
+li:nth-child(3):focus-within ~ .table-container .row1 {
+    background-color: #e6f3ff;
+    box-shadow: 0 0 8px rgba(70, 130, 180, 0.5);
+}
+
+li:nth-child(4):hover ~ li .table-container .row4,
+li:nth-child(4):focus-within ~ .table-container .row1 {
+    background-color: #e6f3ff;
+    box-shadow: 0 0 8px rgba(70, 130, 180, 0.5);
+}
+
+/* TO DO
+Please add the rest of the row on hover hightlight */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Thank you for your order</title>
+    <link rel="stylesheet" href="results-styles.css">
+    <script>
+    // Execute when the DOM is fully loaded
+    window.onload = function() {
+        // Create URL parameters object from current page URL
+        const params = new URLSearchParams(window.location.search);
+        
+        // Helper function to safely get and display parameter values
+        function displayParam(elementId, paramName) {
+            const element = document.getElementById(elementId);
+            const value = params.get(paramName);
+            if (element) {
+                element.textContent = value || 'empty';
+            }
+        }
+        
+        // Fill in customer information
+        displayParam('customername', 'customername');
+        displayParam('address', 'address');
+        displayParam('telephone', 'telephone');
+        displayParam('email', 'email');
+        displayParam('instructions', 'instructions');
+        
+        // Fill in pizza specifications
+        displayParam('crust', 'crust');
+        displayParam('pizzas', 'pizzas');
+        
+        // Handle multiple toppings selections
+        const toppingsElement = document.getElementById('toppings');
+        if (toppingsElement) {
+            const toppings = params.getAll('toppings');
+            toppingsElement.textContent = toppings.length ? toppings.join(', ') : 'empty';
+        }
+    }
+    </script>
+</head>
+
+<body>
+<!-- Main heading -->
+<h1>THANK YOU</h1>
+
+<!-- Confirmation message -->
+<p>Thank you for ordering from Black Goose Bistro. We have received the following information about your order:</p>
+
+<!-- Customer information section -->
+<h2>Your Information</h2>
+<ul>
+    <li><strong>Name:</strong> <span id="customername"></span></li>
+    <li><strong>Address:</strong> <span id="address"></span></li>
+    <li><strong>Telephone number:</strong> <span id="telephone"></span></li>
+    <li><strong>Email Address:</strong> <span id="email"></span></li>
+</ul>
+<!-- Students need to fill out the display for the devlieray decription part -->
+<p><strong>Delivery instructions:</strong> <span id="instructions"></span></p>
+
+<!-- Pizza order details section -->
+<h2>Your pizza</h2>
+<!-- Students need to fill out the display for the pizza order details in a unorder lists with a specific ids -->
+<ul>
+    <li><strong>Crust:</strong> <span id="crust"></span></li>
+    <li><strong>Toppings:</strong> <span id="toppings"></span></li>
+    <li><strong>Number:</strong> <span id="pizzas"></span></li>
+</ul>
+
+<!-- Disclaimer -->
+<p class="disclaimer"><small>This site is for educational purposes only. No pizzas will show up at your door.</small></p>
+</body>
+</html>
