@@ -1,0 +1,118 @@
+Quinn Smiley
+CIT 383 
+April 23rd, 2026
+
+Part 1
+
+Statements:
+1. Raw Data
+2. Information
+3. Insight
+4. Decision
+
+1. The insight statement required interpretation rather than direct measurment.
+
+2. Raw data alone is not enough for decision making because decision making requires inferences from the context of the data.
+
+
+
+Part 2
+
+1. Chart A is misleading because it is trying to show a greater gap in test scores than there is, by starting the y-axis at 90 instead of 0. 
+
+2. Chart B is misleading because it is not comparing equal sample sizes for the satisfaction rates that are bring compared. 
+
+3. I think that Chart B is more misleading because it gives the impression that there is a significant difference in user satisfaction when in reality the results are more differed becasue it was a larger sample size. 
+
+4. I would redesign Chart B to have satisfaction on the y-axis and sample size on the x-axis. 
+
+
+
+Part 3
+
+Online Services: 
+1. YouTube - search history, clicks, website tracking for ads, location, other app & social media tracking, cookies
+2. Spotify - search history, clicks, website tracking for ads, other app & social media tracking, cookies
+3. Maps - location, search history, network
+
+1. Search history seems to be the most common.
+
+2. Location traking feels helpful for things like the map app, and YouTube giving me results for an American audience. 
+
+3. The only form of tracking I didn't really think about was network.
+
+
+
+Part 4
+
+Sites:
+
+Name: Ulta
+Reject All: No just "Reject Non-Fucntional"
+Accept All: No just "I understand" to the fact that they use cookies
+Manage Preferences: Yes
+Categories: Performance, Advertising, Functional
+Understandable: Yes, but the categories were vague (potentially on purpose?)
+
+
+Name: Old Navy
+Reject All: No just a switch to "opt-out of online info sharing"
+Accept All: Basically doing nothing is accepting them all.
+Manage Preferences: Yes
+Categories: Online Info Sharing
+Understandable: No, the notice that popped up had not buttons, only links which I think would deter some people because it looks like a terms of service notice. Additionally, they have not categories for cookies only one option to opt out of online info sharing, and a web form to opt out of offline info sharing. 
+
+
+Name: NFL
+Reject All: Kind of - "Reject Optional Tracking"
+Accept All: Yes - "Acknowledge Tracking"
+Manage Preferences: No
+Categories: N/A
+Understandable: Yes, but seems oversimplified.
+
+
+1. Being able to reject some of the cookies was available on all sites, as well as accepting all of them. 
+
+2. Ulta gave the clearest choices. 
+
+3. Old Navy made accepting much easier than rejecting. To reject some you had to follow a link and to reject the rest you had to fill out an online form. 
+
+4. The banners suggest that as people become more aware of wheat cookies do, companies are more incline to ease their anxiety with pop ups like these. However, I do always raise an eyebrow at the idea of "necessary" cookies.
+
+
+
+Part 5
+
+Items:
+1. Signal
+2. Inference
+3. Signal
+4. Inference
+5. Signal
+6. Inference
+
+1. Inferences are just an educated guess based on correlating factors. Just because you're on campus early doesn't inherently mean you have moring class. 
+
+2. Sometimes educated guesses are correct and they want to continue to reccomend things that you might like. 
+
+
+
+Part 6
+
+1. The claim shows correlation. 
+
+2. Why the productivity apps are the sole cause of better grades.
+
+3. A student may also have a tutor in addition to the productivity app.
+
+4. Evidence that shows how productivity apps influence grades. 
+
+
+
+Part 7
+
+1. Review app permissions and turn off ad personalization.
+
+2. They are easy actions I can take on my phone.
+
+3. Looking at app permissions because I can look at what might be a security risk. 

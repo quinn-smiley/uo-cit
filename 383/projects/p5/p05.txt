@@ -1,0 +1,62 @@
+Quinn Smiley
+CIT 383
+May 5th, 2026
+
+Part 1
+
+Name: Motion Pick 
+Solution: Helps user find a movie to watch based on genre preference.
+Users: Parents and adults looking for a movie suggestion.
+Tool: Google CoLab
+
+
+
+Part 3
+
+Test Case #1: 
+Starting prompt: 
+1. Horror
+2. Romantic Comedy
+3. Action/Adventure
+4. Mystery
+5. Feel-good
+6. Comedy
+7. Thriller
+8. Family-friendly
+Input: Pick a genre (number or name), or 'q' to quit: thriller
+Output: Suggestion (Thriller): Se7en
+Second Input: Seen it? (y/n): n
+Second Output: Back to first prompt.
+Helpful?: Yes, I found a movie that I had never seen before.
+
+Test Case #2: 
+Starting prompt: 
+1. Horror
+2. Romantic Comedy
+3. Action/Adventure
+4. Mystery
+5. Feel-good
+6. Comedy
+7. Thriller
+8. Family-friendly
+Input: Pick a genre (number or name), or 'q' to quit: feel-good
+Output: Suggestion (Feel-good): Legally Blonde
+Second Input: Seen it? (y/n): y
+Second Output: Suggestion (Feel-good): Happy Gilmore
+Third Input: Seen it? (y/n): n
+Third Output: Back to first prompt.
+Helpful?: Yes, I found a movie that I had never seen before.
+
+
+
+Part 4
+
+For this project I used Python in Google CoLab. The first major step the project performs is printing the available genre options and allowing the user to input either the number of the genre or the name of it. Then, it gets a random suggestion from the list that is assigned to that genre. Next, it prompts the user to indicate whether they have seen the movie before. Finally, if the anser is "y" then it picks another movie from the same genre list, and if the anseer is "n" it returns to the original genre prompt. The user can quit the program at any time by inputing "q". Originally, I had modeled this agent after the to-do list assignment we had I think in 111 or 281. I used the initial draft I created and asked Cursor to make it more concise and fix any errors. Then, I asked it how to implement giving the user the option to say they have seen the movie before. I created the dictionary that holds the genres and movies, the genres variable, the skeleton for display_genres, the skeleton for pick_genre, and the skeleton for suggest_movie. The project overall was fairly understandable for me, the hardest part was making it more concise. 
+
+
+
+Part 5
+
+The part of my project that works the best is the initial suggestion feature and the prompt for if the user has seen it. It gives the user information and the ability to get another suggestion so they are not stuck with whatever the first suggestion was. I think what could be improved is making the lists longer or developing the agent to be able to find a movie from the internet. AI was helpful during devleopment for cleaning up the code and improving my logic. 
+
+I still need to think through how much agents really include hard coding. I know we're doing a very elementary level of agents but I want to think through how to connect an agent to the internet or at least a larger database of movies. If I had another week I would want to start that process and learn f=more about how agents get information from the internet. 

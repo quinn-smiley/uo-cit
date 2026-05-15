@@ -1,0 +1,76 @@
+Quinn Smiley 
+CIT 383 
+April 19 2026
+
+Part 1
+VM:
+IP Address: 
+- IP4: 10.0.2.15
+- IP6: fd17:625c:f037:2:943a:f3b6:9949:495d
+Subnet Mask: 
+- IP4: /24
+- IP6: /64
+Default Gateway: 
+- IP4: 10.0.2.2
+- IP6: fe80::2
+DNS Server: 162.252.172.57
+
+Host: 
+IP Address: 
+- IP4: 192.168.56.1
+- IP6: fe80::c01b:68b1:e379:1ad7%3
+Subnet Mask: 255.255.255.0
+Default Gateway: 10.10.99.1
+DNS Server: localdomain
+
+1. The VM and the host computer have different IP addresses because the VM acts as a completely separate machine, therefore warranting a separate IP address for routing. 
+
+2. NAT affects the VM's identity by translating its private IP address into a public one when interacting with the internet, outside the VM.
+
+3. The VM and the host computer share a DNS server for efficiency. The VM could have a different DNS server but it would have the same function and the same information. It just translates names into IPs and no matter which DNS you use, the translation will be the same. 
+
+
+
+Part 2
+1. The VM took much longer to ping example.com than the host computer did. 
+
+2. The VM's first hop is to get out of the VM itself, while the host computer's first hop is to the physical router.
+
+3. Some sites block pinging entirely because of the security risk. Some hackers send a massive amount of pings in order to overwhelm the system. 
+
+
+
+
+Part 3
+1.
+VM - The first hop for the VM is the Virtual Gateway. 
+Host - The first hop for the host computer is the physical router. 
+
+2. The VM and the host cross paths on the fourth hop. 
+
+3. This reveals that the NAT has translated both the VM and the host's IP addresses to be public. 
+
+
+
+
+Part 4
+1. The host could not reach the VM's server because it is being hosted locally on the VM. 
+
+2. NAT makes it so that the VM can interact with the host computer but the host computer cannot interact with the VM.
+
+3. Localhost is just available to the computer it is on, while an IP address is globally accessible. 
+
+
+
+
+Part 5
+1. The HTTP status code was 200 (OK).
+
+2. Three headers included in the reuslts were content type (metadata), server (content), and allow (metadata).
+
+3. curl helps me understand browser behavior better because it helps me visualize the "conversation" between browser and server. 
+
+
+
+Part 6
+Before the packet can start moving from the VM to example.com, the VM uses DNS to translate the name example.com into an IP address, which tells the packet where its going. The first routing decision happens when the VM knows that the destination is outside itself, so it sends the packet to the virtual gateway. As the packet enters the host computer, the host performs the first round of NAT. This is where the VM's private IP stops being used, the host replaces it with its own public IP address because the one from the VM is not globally available. From there, the packet moves to the physical home router, which performs NAT a second time to swap the host's IP for the Router's Public IP address. This public IP is the final global identity provided by the ISP. The ISP then handles the final routing decisions, passing the packet through the internet until it finds the server for example.com. To return, the server sends data back to the public IP, and the router and host use their internal memory to tranlate the addresses back to private and deliver the packet back to the VM.

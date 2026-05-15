@@ -1,0 +1,107 @@
+Quinn Smiley
+CIT 383
+April 8th, 2026
+
+Part 1: 
+
+1. A lot of what I saw was metadata. For example all of the request information like the request method and request url. The actual content is mostly in the response section like the content security policy. 
+
+2. An attacker can gain sensitive information about the user and about the website itself. Such as usernames & passwords, and API endpoints. 
+
+3. A lot of the metadata corresponds with headers, i.e. the status code. Additionally, the payload is the content so it would apply to the same things. 
+
+4. The "not secure" indicator tells me that attackers may have access to anything I input into the website. Chrome dev tools also showed what aspects of the website itself are available to attackers. 
+
+
+Part 2: 
+
+1. Because HTTPS does not prevent me from seeing the data on the website, it just makes ssure that the information being transferred is encrypted while being transferred. 
+
+2. They would see ciphertext of the actual content in the site, but they would be able to see what website I'm on, my ip address, packet sizes and timing, and that I am using HTTPS.
+
+3. The biggest difference in risk is the fact that the channel of HTTP is insecure and is vulnerable to attacks (especially man in the middle attacks). While HTTPS does not hide everything, it does secure the channel. 
+
+4. It verifies who the certificate was issued to, issued by, the validity period, and Fingerprints. 
+
+
+Part 3: 
+
+1. You can see the information from the form in form data. 
+
+2. You can also see the information from the form in form data. 
+
+2. In the HTTP version the attacker would be able to see the form data, while in the HTTS version it would be encrypted. 
+
+
+Part 4: 
+
+1. HTTP:
+- Request url
+- Request method
+- Status code
+- Host 
+- User-Agent
+- Payload tab
+- Response tab
+
+HTTPS:
+- Request url
+- Host
+
+2. Metadata: 
+- Request url
+- Request method
+- Status code
+
+Content: 
+- Payload tab
+- Response tab
+
+3. This reinforces the idea that encryption protects payload but not all metadata because the attacker is able to see what website you are on and the size ant timing of packages even when you use HTTPS. 
+
+Part 5: 
+
+URLs: 
+http://httpforever.com/favicon.ico, 
+http://httpbingo.org/get, 
+https://httpbingo.org/get
+
+1. & 2. 
+http://httpforever.com/favicon.ico - I can infer that the site is unsecure and on a path called "favicon." -> API
+
+http://httpbingo.org/get - I can infer that the site is unsecure and that the path is "get." -> API
+
+https://httpbingo.org/get - I can infer that the site is secure and that the path is "get." -> Form Handler
+
+3. I would be most curios to look at http://httpforever.com/favicon.ico because it is unsecure and it has an interesting pathway name. 
+
+4. They help the attacker know what type of information may n=or may not be available on a site. 
+
+
+Part 6: 
+
+1. Yes, because the request URL has https.
+
+2. Yes, because the request URL has http. 
+
+3. The attacker cannot see the specifics of the cookie if it sent of https. 
+
+4. This supports the attacker mentality we have been talking about because an attacker would rather look at a cookie and know what it does on an unsecured website, than take the risk of not knowng what a cookie might be collecting on a secure website. 
+
+
+Part 7: 
+
+Requests: 
+
+The attacker might want to look at a cookie to see what kind of information it is collecting. 
+
+The attacker might want to look at jsonview-core.css to see what kind of Chrome extention it is. 
+
+The attacker might want to look at options.png because it may give away ciphertext. 
+
+1. Devtools help s me understand what attackers are looking for and what they have access to on different websites. 
+
+2. Well, I found options.png which I don't fully understand, but it does look like some of the ciphertext examples we'e seen in class. 
+
+3. A packet capture may have more personal information than Devtools. 
+

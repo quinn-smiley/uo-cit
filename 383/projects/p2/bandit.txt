@@ -1,0 +1,53 @@
+Quinn Smiley
+CIT 383
+April 12th, 2026
+
+Solutions:
+
+Level 0 → 1
+Goal: The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
+Commands used: cat readme
+Explanation: cat printed what was in the readme
+Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+
+Level 1 → 2
+Goal: The password for the next level is stored in a file called - located in the home directory.
+Commands used: cat ./-
+Explanation: The ./ makes the program understand that "-" is the filename.
+Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+
+Level 2 → 3
+Goal: The password for the next level is stored in a file called --spaces in this filename-- located in the home directory.
+Commands used: cat ./"--spaces in this filename--"
+Explanation: The quotes make sure the system reads the file name despite the spaces. 
+Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
+Level 3 → 4
+Goal: The password for the next level is stored in a hidden file in the inhere directory.
+Commands used: cd inhere, ls -a, cat ...Hiding-From-You
+Explanation: ls -a shows all of the files in the directory, regardless of whether they are hidden. 
+Password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+
+Level 4 → 5
+Goal: The password for the next level is stored in the only human-readable file in the inhere directory.
+Commands used: file ./*, cat ./-file07
+Explanation: file ./* shows what is in each file in the directory. 
+Password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+Level 5 → 6
+Goal: The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties: human-readable, 1033 bytes in size, not executable.
+Commands used: find . -type f -size 1033c ! -executable, cd maybehere07, cat .file2
+Explanation: find: type is a file, size is 1033 bytes, and it is not executable (!=).
+Password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+
+
+Reflection
+
+1. I learned more about how offensive hacking might look. Obviously, this was entry-level, but navigating through file directories to find information seems pretty straightforward now. Additionally, I know more of the built-in Linux commands now. 
+
+2. The last level was definitely the hardest because I had no idea how the syntax worked for that problem. Eventually, after exhausting the help commands in the terminal, I asked AI what the best answer might be. After that, I understood that commands like find have parameters that are not required and are able to be specified when needed. 
+
+3. Honestly, I was surprised at how easily I picked it up. I have a Windows computer, so it was all different commands. Additionally, I was surprised (and overwhelmed) by how many versions of one command there are, and how the differences slightly change the function.
+
+4. I think it connects to pen testing because it's kind of a beginner's look at how one "pokes around" in a directory to see what information they can find.

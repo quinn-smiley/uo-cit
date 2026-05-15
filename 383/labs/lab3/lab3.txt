@@ -1,0 +1,86 @@
+Quinn Smiley 
+CIT 383
+April 15 2026
+
+
+Part 1
+VM:
+IP Address: 
+- IP4: 10.0.2.15
+- IP6: fd17:625c:f037:2:943a:f3b6:9949:495d
+Subnet Mask: 
+- IP4: /24
+- IP6: /64
+Default Gateway: 
+- IP4: 10.0.2.2
+- IP6: fe80::2
+DNS Server: 162.252.172.57
+
+Host: 
+IP Address: 
+- IP4: 192.168.56.1
+- IP6: fe80::c01b:68b1:e379:1ad7%3
+Subnet Mask: 255.255.255.0
+Default Gateway: 10.10.99.1
+DNS Server: localdomain
+
+1. The VM Ip address is completely different from my computer's IP address because they are technically different computers. 
+
+2. I don't think they share a DNS server but I wouldn't know for sure based on the information I got from my computer. 
+
+3. My VM's gateway is the general gateway used for virtual environments. This means that it is using a virtual router separate from mu host computer's router.
+
+
+
+Part 2
+1. It successfully reached its gateway which confirms that the virtual router in my VM is working. 
+
+2. The latency in the VM's gateway and example.com were very similar. I believe this is because the VM's gateway is virtual and not readily available like it would be on my physical host computer. 
+
+3. Some websites may block ping because it can be a security risk. 
+
+
+
+Part 3
+1. The first hop on my VM is its virtual router. 
+
+2. The first hop on my host computer timed out. 
+
+3. Hops 4 and 6 are identical between the VM and my host computer. This shows where my VM goes outside of itself. It tells us that the NAT has finished its translation
+
+
+
+Part 4
+1. My host could not reach the VM's webserver because the NAT is working to keep the VM private, but still able to see outside of itself. 
+
+2. The NAT keeps the VM private from other computer like my host computer. 
+
+3. localhost never leaves the computer while a real IP address is used by other devices to find it. 
+
+
+
+Part 5
+1. 200 (OK)
+
+2. Metadata: 
+- content-type
+- connection
+-allow
+-accept-ranges
+
+Content: 
+- server
+- age
+
+3. It helps me visualize the content that my browser is fetching, and how routing(like we did in Postman) works on a real website. 
+
+
+
+Part 6
+Summary: From my VM, the packet travels to a virtual Network Interface Card which allows a device to connect to a network. From there it goes into the host computer, and then to the host computer's router. From there the packet goes from the computer's location to the Internet Service Provider's local hub. Finally, from there it reaches the internet, and arrives at a server. 
+
+1. My VM's private IP stops being used when it gets onto my host computer's router. 
+
+2. The NAT replaces the private IP address with a public one. 
+
+3. The NAT is essential for my VM to reach the internet because it replaces the private IP address with a public one. Allowing the packet to exit the VM. 

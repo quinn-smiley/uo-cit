@@ -1,0 +1,86 @@
+Quinn Smiley
+CIT 383
+May 10th, 2026
+
+Part 1
+
+1. Python 3.13.2
+2. Yes
+3. N/A
+
+
+
+Part 2
+
+1. Saved Quotes:
+('“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”', 'Albert Einstein')
+('“It is our choices, Harry, that show what we truly are, far more than our abilities.”', 'J.K. Rowling')
+('“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”', 'Albert Einstein')
+('“The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.”', 'Jane Austen')
+("“Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.”", 'Marilyn Monroe')
+
+Saved API Results:
+('alex', 49, 411442)
+
+2. web_data.db
+
+3. The scrape_quotes() function.
+.
+4. The call_api() function
+
+
+
+Part 3
+
+1. I couldn't find this portion of the code. 
+
+2. Information is usually wrapped in class names. 
+
+3. Class names can change for a variety of reasons which makes the scraping technique unreliable. 
+
+
+
+Part 4
+
+1. Count, name, and age.
+
+2. The API results look for specicific fields while the HTML returns what it was hard-coded to return. 
+
+3. It is a more cleanly structured way to view data and is more reliable than data scraping.
+
+
+
+
+Part 5
+
+1. It creates a duplicate of the previous data in the database. 
+
+2. They store the same information twice which can make searching for or refering to the data difficult.
+
+3. It is useful because you don't have to create an full server or database.
+
+
+
+Part 6
+
+1. What does BeautifulSoup do in this code?
+
+2. Ask the user to enter the name for the API call
+
+3. Yes
+
+4. I still don't fully understand some of the syntax, and some of the functions.
+
+
+
+Part 7
+
+1. API was definitely easier because it was easier for me to make sense of and read.
+
+2. Scraping seemed more likely to break in the future because it relies on class names which cna be changed. 
+
+3. It stored the information for the program.
+
+4. It could compile a multitude of API calls and store and categorize all of the data.
+
+5. Someone should consider what information they are collecting from the website and if it was intended to be public. 

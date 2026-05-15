@@ -1,0 +1,44 @@
+Quinn Smiley
+CIT 383 
+April 5th, 2026
+
+Part 1: 
+
+In the lab I learned where my information is online and what data breaches have impacted me. When I looked myself up, there were no pictures of my face, and my social media did not come up. The only links to me was my LinkedIn and there was one picture of my friends who are in the same sorority as me. Also, I checked my personal email as well as my school email, and I found that my data has been breached three times. One of which I was already aware of but the other two I did not know about, and one of them was very recent. I changed my email password but I found it interesting that my VPN only caught one out of three of the breaches (the oldest one). In this project the only really concerning thing I found was how many apps have my location. I mean my camera app and the Top Pot Doughnuts app had my location. I can't imagine why, but I changed the permissions obviously. 
+
+Part 2: 
+
+1. Oversharing location
+2. Using pirating websites (allegedly)
+3. Using Google password manager
+4. Using two-factor authentication on the same device
+5. Accepting cookies
+6. Not reading terms and conditions
+
+Part 3:
+
+1. Oversharing location - least privilege
+2. Using pirating websites (allegedly) - defense in depth? (kinda on me)
+3. Using Google password manager - defense in depth?
+4. Using two-factor authentication on the same device - strong authentication
+5. Accepting cookies - least privilege
+6. Not reading terms and conditions - defense in depth
+
+Part 4:
+
+1. Oversharing location - go through app privileges and change them to not have my location
+2. Using pirating websites (allegedly) - idk stop using them?
+3. Using Google password manager - change my password manager to something more reliable
+4. Using two-factor authentication on the same device - use a different authentication app that uses a more secure second-factor to authenticate
+5. Accepting cookies - don't accept cookies and continue to use caution when visiting websites
+6. Not reading terms and conditions - read them probably
+
+Part 5: 
+
+I learned more about what people can find about me, what my VPN does, and the permissions I had given to apps. It was actually very comforting to me to find out that there is not that much information about me when you search my name, however, I did think it was weird that pictures of my firends came up. I also thought that my VPN would protect me more from things like cookies. Finally, I didn't realize how many permissions I gave to apps especially in terms of sharing my location. 
+
+I think the security planner was the most helpful because it gave specific, detailed instructions about how to do each module. 
+
+Realistically I will implement using a new password manager, change permissions on my apps, and download a new two-factor autentication app. 
+
+Although I did learn a lot from these exercises, I think my understanding of privacy and security stayed the same. Although I do think that I can differentiate between them better now. 

@@ -1,0 +1,91 @@
+Quinn Smiley 
+CIT 383
+April 26th, 2026
+
+Part 1
+
+URL: https://sustainability.aboutamazon.com/
+Chart Type: Percentages without totals
+Message: Amazon wants you to think that they are a sustainable company despite the insane amount of goods that are manufactured, preccessed, and shipped by them.
+Misleading factor: On the website they have one statistic that says: "4% reduction in carbon instensity compared to 2023." First of all, are we supposed to know the amount of "carbon intensity" from 2023? What is "carbon intensity" because that wording seems to intentionally not include the word "emissions." Additionally, they include a statistic that says: "10K+ electric vehicles deployed in India." How many vehicles are deployed in India total, and comparatively are a significant amount now electric? How many vehicles are deployed in other countries (namely the U.S.), and what percentage of those vehicles are electric?
+Redesign Idea: They could provide more context for the statistics they put out, but I think that would make them look considerably less sustainable - because they aren't.
+
+
+URL: https://lunchly.com/pages/us-vs-them
+Chart Type: Intentionally misleading wording
+Message: That Lunchly is more healthy than Lunchables. 
+Misleading Factor: In tab they have dedicated to comparing the Lunchly snack packs to Lunchable snack packs, they intentionally leave out the sodium comparision. They re-label sodium as electrolytes which is probably a familiar buzzword parents will recognize and conflate that with being "healthier."
+Redesign Idea: Tell us how much sodium is in there! We know its more than Lunchables!
+
+URL: https://www.sheingroup.com/our-group
+Chart Type: Intentionally misleading wording and percentages without totals
+Message: SHEIN is saving water and materials and is therefore somewhat sustainable. 
+Misleading Factor: Not only is there a percentage that does not include a whole, but the unit of measure is strange for what it is measuring. This is the full statistic: "51% of directly sourced printed fabrics produced using digital thermal transfer and Cool Transfer Denim printing, saving 550,000 cubic meters of water." What? This statistic is so obviously trying to show that SHEIN is sustainable without even realy knowing what they're talking about - at least it seems that way. 
+Redesign Idea: Pick an appropriate unit of measurement for water. 
+
+
+
+
+
+
+Part 2
+
+Service: YouTube
+Evidence:Recommending videos by the same or similar creators and ads tailored to my interests.
+Data Collected: 
+- What type of videos I am most likely to click on
+- How long I watch the video for
+- What time of day I am most likely to log in to YouTube
+- What ads I immediately skip vs watch 
+- My location
+- Gender
+- Age
+Predictions/Recommendations: Recommending videos I might like and ads I might be interested in based on the above factors. 
+Company Interest: To help predict what will keep me on their site longer. 
+Feeling: I like that YouTube recommends videos similar to what I already like, and because its longer-form content I feel more in control of my time on the app. I feel that I won't lose track of time and can turn it off whenever I want. 
+
+
+Service: Spotify
+Evidence: Music recommendations and playlists tailored to your favorite songs and artists. 
+Data Collected: 
+- Genres I like
+- Artists I like
+- Age
+- Location
+- Gender
+- What time of day I'm most likely to listen to Music
+Predictions/Recommendations: Predicts what songs I might be interested in based on my previous choices, tailors playlists for my taste, and shows me my habits for the year in Spotify Wrapped. 
+Company Interest: To help predict what will keep me on the app longer. 
+Feeling: I don't feel too weird about Spotify having this data as long as its being used for what I think its for. It makes sense to have my location, age, and gender so that it can push music that has been liked by 20-year-old American girls recently. 
+
+
+
+
+
+
+Part 3
+
+Claim: "90.5% of patients saw improvement in their acne at 3 weeks"
+Source: https://curology.com/
+Evidence: They include a few before and after photos of people who have used the product and their testimonies. 
+Context: How much improvement people saw, and how long it took for their acne to clear entirely. 
+Correlation or Causation: I think you could make a pretty strong case for causation, but there are a lot of other factors that may cause or improve acne.
+Alternate Explainations: 
+- change in diet  
+- medication in addition to Curology products (accutane)
+- other topical procucts in additon to Curology
+- change in exercise habits
+Additional Evidence: specify that people are only using Curology and not other medications in tandem with it. 
+
+
+
+
+
+
+Part 4
+
+What surprised me the most during this project is what companies will make misleading claims about. The Amazon example I gave in Part 1 really stuck with me because climate action is something I am very passionate about. It just highlights what major corporations will do to ease consumer guilt about buying from them. The fact that Amazon can legally misrepresent the impact they have on cliamte change as one of the biggest companies in the world is astonishing to me. Not necessarily surprising, but I anticipated looking at claims from smaller companies that many people already raised an eyebrow at. I would have thought that a company as big as Amazon would stray away from claims like that because of possible legal action, but I guess not. 
+
+I think before this project I already had a pretty good sense of what apps and websites were tracking my data. However, I had never really thought to analyze claims on a company's website. I have some background in marketing so I usually analyze the ads I see on TV or YouTube. But I never really looked into claims on websites unless they were obviously untrue. This made me realize that none of the information a company puts out goes against its own interest - unless mandated by the government. A seemngly unbiased statistic has actually been curated to make the company look better. 
+
+In the future I will make it a habit to question the numbers. I think before I assumed that numbers meant facts. I see now how numbers can be manipulated to fit a narrative, so going forward I will look into claims I see on the websites I use. 

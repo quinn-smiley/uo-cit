@@ -1,0 +1,8 @@
+What I found: 
+I had zero data breaches for my school email, but I have so many permissions allowed for so many websites (most of which I do not use).
+
+What surprised me: 
+I was surprised by how many websites had permission enabled on my web browser. 
+
+What I want to change: 
+I want to go through the websites that have permissions and restrict most of them. 
