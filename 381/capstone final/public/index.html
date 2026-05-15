@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hamburger Menu -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="nav-menu" class="nav-menu">
+      <button type="button" id="nav-home-button" class="nav-menu-item">Home</button>
+      <button type="button" id="nav-view-profile-button" class="nav-menu-item">View Profile</button>
+    </div>
+  </nav>
+
+  <!-- Sign In/Sign Up Modal -->
+  <div id="auth-modal" class="auth-modal">
+    <div class="auth-container">
+      <div class="auth-header">
+        <button class="auth-tab active" data-mode="signin">Sign In</button>
+        <button class="auth-tab" data-mode="signup">Sign Up</button>
+      </div>
+      
+      <div class="auth-content">
+        <h2 id="auth-title">Sign In</h2>
+        <form id="auth-form">
+          <!-- Sign In Fields -->
+          <div id="signin-fields">
+            <div class="form-group">
+              <label for="username-input">Username</label>
+              <input type="text" id="username-input" name="username" autocomplete="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+              <label for="password-input">Password</label>
+              <input type="password" id="password-input" name="password" autocomplete="current-password" placeholder="Enter your password">
+            </div>
+          </div>
+
+          <!-- Sign Up Fields -->
+          <div id="signup-fields" style="display: none;">
+            <div class="form-group">
+              <label for="email-input">Email</label>
+              <input type="email" id="email-input" name="email" autocomplete="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="signup-username-input">Username</label>
+              <input type="text" id="signup-username-input" name="signup-username" autocomplete="username" placeholder="Choose a username">
+            </div>
+            <div class="form-group">
+              <label for="name-input">Name</label>
+              <input type="text" id="name-input" name="name" autocomplete="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="signup-password-input">Password</label>
+              <input type="password" id="signup-password-input" name="signup-password" autocomplete="new-password" placeholder="Choose a password">
+            </div>
+            <div class="form-group">
+              <label for="profile-picture-input">Profile Picture</label>
+              <input type="file" id="profile-picture-input" name="profile-picture" accept="image/*">
+              <div id="profile-preview" class="profile-preview"></div>
+            </div>
+          </div>
+
+          <div id="auth-error" class="error-message"></div>
+          <button type="submit" id="auth-submit" class="auth-submit-btn">Continue</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quiz Form (hidden initially) -->
+  <div id="quiz-container" class="quiz-container hidden">
+    <form id="quiz-form">
+          <h1>Are you My Melody or Kuromi?</h1>
+          <h3>What is your favorite color?</h3>
+          <label><input class = "options" type="radio" name="color" value="1" required> Pink</label>
+          <label><input class = "options" type="radio" name="color" value="2"> Blue</label>
+          <label><input class = "options" type="radio" name="color" value="3"> Black</label>
+          <label><input class = "options" type="radio" name="color" value="4"> Purple</label>
+
+          <h3>What is your favorite type of music?</h3>
+          <label><input class = "options" type="radio" name="music" value="1" required> Rock</label>
+          <label><input class = "options" type="radio" name="music" value="2"> Pop</label>
+          <label><input class = "options" type="radio" name="music" value="3"> Indie</label>
+          <label><input class = "options" type="radio" name="music" value="4"> R&B</label>
+
+          <h3>What is your favorite activity?</h3>
+          <label><input class = "options" type="radio" name="activity" value="1" required> Sports</label>
+          <label><input class = "options" type="radio" name="activity" value="2"> Arts & Crafts</label>
+          <label><input class = "options" type="radio" name="activity" value="3"> Making music</label>
+          <label><input class = "options" type="radio" name="activity" value="4"> Shopping</label>
+
+      <!-- Button Group -->
+      <div class="button-group">
+      <button type="submit" id="submit-button">Submit Quiz</button>
+      </div>
+
+      </form>
+
+      <div id="result"></div>
+  </div>
+
+  <!-- Results Page (hidden initially) -->
+  <div id="results-container" class="results-container hidden">
+    <div class="results-card">
+      <div class="results-header">
+        <h1 class="results-title">You Are...</h1>
+      </div>
+      <div class="character-display">
+        <img id="character-image" src="" alt="Character" class="character-img">
+        <h2 id="character-name" class="character-name"></h2>
+      </div>
+      <div class="results-description">
+        <p class="share-prompt">Share your results!</p>
+        <div class="share-section">
+          <input type="text" id="share-link-input" readonly class="share-link-input" value="">
+          <button id="copy-link-btn" class="copy-link-btn">Copy Link</button>
+        </div>
+        <div id="share-message" class="share-message"></div>
+      </div>
+      <div class="results-actions">
+        <button id="retake-quiz-btn" class="retake-btn">Retake Quiz</button>
+        <button id="view-profile-from-results-btn" class="view-profile-btn">View Profile</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Profile Page (hidden initially) -->
+  <div id="profile-container" class="profile-container hidden">
+    <div class="profile-card">
+      <button id="back-to-quiz-btn" class="back-button">← Back to Quiz</button>
+      <h1>My Profile</h1>
+      
+      <div class="profile-picture-container">
+        <img id="profile-picture-display" src="" alt="Profile Picture" class="profile-picture-large">
+      </div>
+      
+      <div class="profile-info">
+        <div class="info-item">
+          <span class="info-label">Name:</span>
+          <span id="profile-name" class="info-value"></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Username:</span>
+          <span id="profile-username" class="info-value"></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Email:</span>
+          <span id="profile-email" class="info-value"></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Member Since:</span>
+          <span id="profile-created" class="info-value"></span>
+        </div>
+      </div>
+
+      <!-- Rename Section -->
+      <div class="profile-rename-section">
+        <h3>Change Name</h3>
+        <div class="rename-form">
+          <input type="text" id="profile-rename-input" placeholder="Enter new name" class="profile-rename-input">
+          <button id="profile-rename-button" class="profile-rename-btn">Update Name</button>
+        </div>
+        <div id="profile-rename-message" class="profile-rename-message"></div>
+      </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
